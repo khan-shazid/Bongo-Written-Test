@@ -1,0 +1,19 @@
+class Vehicle{
+  int wheels = 0;
+  void set_num_of_wheels(int val){
+    wheels = val;
+  }
+}
+
+class Car extends Vehicle{
+  public Car(int wheels,int passengers,int gas){
+    super();
+    set_num_of_wheels(wheels);
+  }
+}
+
+class Initiate{
+  public static void main(String args[]){
+    Car car = new Car(4,4,100);
+  }
+}
