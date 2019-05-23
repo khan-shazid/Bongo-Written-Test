@@ -73,19 +73,15 @@ executeTestCases = () => {
             }
         ];
     let flag = null;
+    let result = "";
     testData.forEach((item,index) => {
-        console.log("for root",compareStrings(testData[0].str1,testData[0].str2));
         if(compareStrings(item.str1,item.str2)==item.result){
-            console.log("checked",item.str1);
+            result+="Test succeeded for \""+item.str1+"\" && \""+item.str2+"\", should return "+(item.result == 0 ? "false" : "true")+"\n";
         }else{
-            flag = index;
+          result+="Test failed for \""+item.str1+"\" && \""+item.str2+"\" \n";
         }
     })
-    if(typeof flag == 'number'){
-        alert("Test failed for \""+testData[flag].str1+"\" && \""+testData[flag].str2+"\"")
-    }else{
-        alert("Successfully tested.")
-    }
+    alert(result);
 }
 
 

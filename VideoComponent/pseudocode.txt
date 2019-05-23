@@ -1,0 +1,19 @@
+videoComponent.play () {
+  # make playbackRate to 1.00
+  # play the video
+}
+
+videoComponent.pause () {
+  # make playbackRate to 1.00
+  # pause the video
+}
+
+forwardButton.onClick(){
+  # make playbackRate to 4.00  //or your value of your choice
+}
+
+rewindButton.onClick(){
+  # Create an interval with 30 ms time period
+  # If currentTime <= 0 then clear interval  //inside interval logic
+  # Else currentTime += -.1; //reduce current time by 100ms foreach 30ms (total playback per sec = (1000/30)*100 = 3.3 sec)
+}
