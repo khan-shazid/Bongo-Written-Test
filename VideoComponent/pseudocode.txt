@@ -14,6 +14,9 @@ forwardButton.onClick(){
 
 rewindButton.onClick(){
   # Create an interval with 30 ms time period
-  # If currentTime <= 0 then clear interval  //inside interval logic
-  # Else currentTime += -.1; //reduce current time by 100ms foreach 30ms (total playback per sec = (1000/30)*100 = 3.3 sec)
+  # If
+      # currentTime <= 0 then clear interval  //inside interval logic
+  # Else 
+      # currentTime += -.1; //reduce current time by 100ms foreach 30ms (total playback per sec = (1000/30)*100 = 3.3 sec)
+      # pause the video
 }
